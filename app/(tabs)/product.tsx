@@ -1,24 +1,15 @@
-import { View, Text, StyleSheet, FlatList, Image, Pressable, Alert } from 'react-native';
+// ✅ app/(tabs)/product.tsx
+import { View, Text, StyleSheet, FlatList, Image, Alert, Pressable } from 'react-native';
 import { useListings } from '../store/store';
-import { Ionicons } from '@expo/vector-icons';
 
 export default function ProductScreen() {
   const { listings, removeListing } = useListings();
   const now = Date.now();
 
-  // ✅ Filter listings less than 7 days old
+  // Filter only listings from the last 7 days
   const filteredListings = listings.filter(
-    (item) =>
-      typeof item.createdAt === 'number' &&
-      now - item.createdAt < 7 * 24 * 60 * 60 * 1000
+    (item) => now - item.createdAt < 7 * 24 * 60 * 60 * 1000
   );
-
-  const handleDelete = (id: number) => {
-    Alert.alert('Delete Listing', 'Are you sure you want to delete this listing?', [
-      { text: 'Cancel', style: 'cancel' },
-      { text: 'Delete', style: 'destructive', onPress: () => removeListing(id) },
-    ]);
-  };
 
   return (
     <View style={styles.container}>
@@ -35,14 +26,11 @@ export default function ProductScreen() {
               {Array.isArray(item.images) && item.images.length > 0 && (
                 <Image source={{ uri: item.images[0] }} style={styles.image} />
               )}
+              <Text style={styles.productName}>{item.title}</Text>
               <Text style={styles.price}>RM {item.price}</Text>
               <Text style={styles.description}>{item.description}</Text>
-              <Pressable onPress={() => handleDelete(item.id)} style={styles.trash}>
-                <Ionicons name="trash-outline" size={20} color="#d90429" />
-              </Pressable>
             </View>
           )}
-          contentContainerStyle={{ paddingBottom: 60 }}
         />
       )}
     </View>
@@ -51,10 +39,10 @@ export default function ProductScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fef6e4',
     flex: 1,
+    backgroundColor: '#fef6e4',
     paddingTop: 80,
-    paddingHorizontal: 20,
+    paddingHorizontal: 24,
   },
   title: {
     fontSize: 28,
@@ -68,34 +56,35 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: '#fff',
+    borderRadius: 16,
     padding: 16,
     marginBottom: 16,
-    borderRadius: 16,
     shadowColor: '#000',
     shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 1 },
-    shadowRadius: 8,
-    elevation: 2,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 3,
   },
   image: {
     width: '100%',
     height: 180,
     borderRadius: 12,
-    marginBottom: 12,
+    marginBottom: 8,
+  },
+  productName: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 4,
   },
   price: {
-    fontWeight: 'bold',
+    fontSize: 16,
+    fontWeight: '600',
     color: 'green',
-    fontSize: 18,
+    marginBottom: 4,
   },
   description: {
-    color: '#333',
-    fontSize: 16,
-    marginTop: 4,
-  },
-  trash: {
-    position: 'absolute',
-    top: 10,
-    right: 10,
+    fontSize: 15,
+    color: '#555',
   },
 });
