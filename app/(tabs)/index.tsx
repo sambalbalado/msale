@@ -12,7 +12,7 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home</Text>
+      <Text style={styles.title}>Products</Text>
       {filteredListings.length === 0 ? (
         <Text style={styles.emptyText}>You have no active listings.</Text>
       ) : (
