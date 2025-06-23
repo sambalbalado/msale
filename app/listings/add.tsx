@@ -5,6 +5,7 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import * as ImagePicker from 'expo-image-picker';
 import { useListings } from '../store/store';
+import React from 'react';
 
 export default function AddListingScreen() {
   const { addListing } = useListings();
