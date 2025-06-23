@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, FlatList, Image, Pressable, Alert } from 'react
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { useListings } from '../store/store';
+import React from 'react';
 
 export default function ListingScreen() {
   const router = useRouter();
