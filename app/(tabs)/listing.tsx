@@ -1,10 +1,18 @@
-import { View, Text, StyleSheet, FlatList, Image, Pressable, Alert } from 'react-native';
+import React from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  Image,
+  Pressable,
+  Alert,
+} from 'react-native';
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { useListings } from '../store/store';
-import React from 'react';
 
-export default function ListingScreen() {
+export default function ListingTab() {
   const router = useRouter();
   const { listings, removeListing } = useListings();
 
@@ -17,7 +25,7 @@ export default function ListingScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Listings</Text>
+      <Text style={styles.title}>My Listings</Text>
 
       <Pressable onPress={() => router.push('/listings/add')} style={styles.addButton}>
         <Ionicons name="add-circle-outline" size={28} color="#d4a373" />
