@@ -1,5 +1,5 @@
 // ✅ app/store/store.tsx
-import { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 // ✅ Define the shape of a single listing
 export type Listing = {
