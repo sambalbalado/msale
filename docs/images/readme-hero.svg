@@ -1,0 +1,20 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">msale — good things, nearby</title>
+  <desc id="desc">Warm editorial banner for Malaysia's local marketplace</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1200" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#FBF8F1"/><stop offset="1" stop-color="#F3EBDD"/></linearGradient>
+    <linearGradient id="coral" x1="847" y1="73" x2="1118" y2="422" gradientUnits="userSpaceOnUse"><stop stop-color="#FF6748"/><stop offset="1" stop-color="#E8432A"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#6A3E2E" flood-opacity="0.13"/></filter>
+  </defs>
+  <rect width="1200" height="500" rx="32" fill="url(#paper)"/>
+  <circle cx="1120" cy="38" r="190" fill="#D8E9DE"/><circle cx="1043" cy="443" r="198" fill="#F1D5C9"/>
+  <path d="M0 407C152 340 260 466 420 407C568 353 682 354 796 420V500H0V407Z" fill="#E7DDCA" fill-opacity="0.68"/>
+  <g transform="translate(70 66)"><rect width="86" height="86" rx="30" fill="#F6593C" transform="rotate(-8 43 43)"/><path d="M22 31L55 48" stroke="white" stroke-width="12" stroke-linecap="round"/><circle cx="65" cy="62" r="7" fill="white"/></g>
+  <text x="181" y="132" fill="#171713" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="700" letter-spacing="-3">msale</text>
+  <text x="72" y="213" fill="#E85035" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">MALAYSIA'S LOCAL MARKETPLACE</text>
+  <text x="70" y="294" fill="#171713" font-family="Georgia, serif" font-size="61" font-weight="700" letter-spacing="-2">Good things, nearby.</text>
+  <text x="72" y="344" fill="#5E5A51" font-family="Inter, Arial, sans-serif" font-size="24">Buy thoughtfully. Sell simply. Meet safely.</text>
+  <g transform="translate(72 385)"><rect width="105" height="39" rx="19.5" fill="#D8E9DE"/><text x="52.5" y="26" text-anchor="middle" fill="#246E53" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">ENGLISH</text><rect x="116" width="169" height="39" rx="19.5" fill="#F6DDCE"/><text x="200.5" y="26" text-anchor="middle" fill="#923C2A" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">BAHASA MELAYU</text><rect x="296" width="102" height="39" rx="19.5" fill="#E7DDCA"/><text x="347" y="26" text-anchor="middle" fill="#5D5140" font-family="Arial, sans-serif" font-size="15" font-weight="700">简体中文</text></g>
+  <g filter="url(#shadow)"><rect x="823" y="53" width="303" height="394" rx="42" fill="url(#coral)"/><circle cx="1067" cy="118" r="91" fill="white" fill-opacity="0.08"/><circle cx="882" cy="421" r="103" fill="white" fill-opacity="0.07"/><rect x="862" y="99" width="225" height="160" rx="29" fill="#FFF9F2"/><path d="M931 204V178C931 159 946 144 965 144H984C1003 144 1018 159 1018 178V204" stroke="#171713" stroke-width="11" stroke-linecap="round"/><path d="M918 202H1031V222H918V202Z" fill="#171713"/><path d="M936 222V238M1013 222V238" stroke="#171713" stroke-width="9" stroke-linecap="round"/><text x="860" y="316" fill="white" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">LOCAL FINDS</text><text x="860" y="355" fill="white" font-family="Georgia, serif" font-size="29" font-weight="700">Made for a</text><text x="860" y="390" fill="white" font-family="Georgia, serif" font-size="29" font-weight="700">second life.</text></g>
+</svg>
+

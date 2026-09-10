@@ -3,6 +3,22 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "description": "A warm, local-first peer-to-peer marketplace for Malaysia.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sambalbalado/msale.git"
+  },
+  "homepage": "https://github.com/sambalbalado/msale#readme",
+  "bugs": {
+    "url": "https://github.com/sambalbalado/msale/issues"
+  },
+  "keywords": [
+    "marketplace",
+    "malaysia",
+    "expo",
+    "react-native",
+    "supabase"
+  ],
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
@@ -41,7 +57,6 @@
     "expo-symbols": "~57.0.2",
     "expo-system-ui": "~57.0.3",
     "expo-web-browser": "~57.0.2",
-    "nvm": "^0.0.4",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-hook-form": "^7.87.0",
@@ -66,5 +81,12 @@
   "private": true,
   "engines": {
     "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >=25.0.0"
+  },
+  "expo": {
+    "doctor": {
+      "appConfigFieldsNotSyncedCheck": {
+        "enabled": false
+      }
+    }
   }
 }
